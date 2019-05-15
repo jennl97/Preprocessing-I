@@ -54,6 +54,114 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+}
+/*My code*/
+//variables
+@backgroundcolor: #e7dfc6;
+@headings: #89023e;
+@decorations: #cbd3dc;
+@bodyfont: 'Dosis', sans-serif;
+@headingfont: 'Merriweather', serif;
+
+//mixins
+.flex(){
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.headers(){
+	display: block;
+		padding-left: 20%;
+		padding-top: 25px;
+		margin-left: 15%;
+		font-family: @headingfont;
+		color: @headings;
+		font-size: 2rem;
+
 }
 
+.bodytext(){
+	margin-left: 35%;
+		font-family: @bodyfont;
+		font-size: 1.5rem;
+}
+.padding(){
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+//main code
+header{
+	.flex();
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	nav a{
+		font-family: @headingfont;
+		padding-left: 20px;
+		text-decoration: none;
+		color: @headings;
+		}
+
+}
+
+.intro{
+	display: block;
+	background-color: @backgroundcolor;
+	.padding();
+
+	.img{
+		margin-left: 40%;
+	}
+
+	.intro-name{
+		.headers();
+		padding-bottom: 5px;
+		}
+
+	p{
+		.bodytext();
+	}
+}
+
+.about-section{
+	.padding();
+	
+	
+	.about-name{
+		.headers();
+		padding-bottom: 5px;
+	}
+	p {
+		.bodytext();
+	}
+}
+
+.portfolio-section{
+	.padding();
+	background-color: @backgroundcolor;
+
+        .portfolio-title{
+			.headers();
+			padding-bottom: 5px;
+		}
+
+		p{
+			.bodytext();
+		}
+
+}
+
+.work-section{
+	.padding();
+	
+	.work-title{
+		.headers();
+		padding-bottom: 5px;
+	}
+	p{
+		.bodytext();
+	}
+
+}
