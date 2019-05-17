@@ -135,98 +135,267 @@ body {
   height: 100%;
 }
 /*My code*/
-header {
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 800px;
+  margin-left: 15%;
+}
+@media (max-width: 500px) {
+  body {
+    display: block;
+    width: 80%;
+  }
+}
+.main-header {
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+.main-header .main-nav {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+  justify-content: space-evenly;
 }
-header nav a {
-  font-family: 'Merriweather', serif;
-  padding-left: 20px;
+.main-header .main-nav a {
+  color: purple;
   text-decoration: none;
-  color: #89023e;
-}
-.intro {
-  display: block;
-  background-color: #e7dfc6;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-.intro .img {
-  margin-left: 40%;
-}
-.intro .intro-name {
-  display: block;
-  padding-left: 20%;
-  padding-top: 25px;
-  margin-left: 15%;
-  font-family: 'Merriweather', serif;
-  color: #89023e;
   font-size: 2rem;
-  padding-bottom: 5px;
 }
-.intro p {
-  margin-left: 35%;
-  font-family: 'Dosis', sans-serif;
-  font-size: 1.5rem;
+.main-intro {
+  display: block;
+  background-color: #D8BFD8;
+  padding: 30px;
+}
+.main-intro .intro .img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.main-intro .intro h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 5px 0;
+}
+.main-intro .intro p {
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 5px 0 5px 0;
+}
+.main-intro .intro-border {
+  margin-top: 20px;
+  border-top: 2px solid purple;
+}
+.main-intro .intro-border p {
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 15px 0;
+}
+.main-intro .intro-border .intro-btn {
+  display: block;
+  margin: 0 auto;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 2rem;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  background-color: purple;
 }
 .about-section {
-  padding-bottom: 15px;
-  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: 30px;
 }
-.about-section .about-name {
-  display: block;
-  padding-left: 20%;
-  padding-top: 25px;
-  margin-left: 15%;
-  font-family: 'Merriweather', serif;
-  color: #89023e;
+@media (max-width: 500px) {
+  .about-section {
+    display: block;
+    width: 100%;
+  }
+}
+.about-section .about {
+  margin-top: 15px;
+  width: 50%;
+  text-align: left;
+  border-right: 3px dotted purple;
+}
+@media (max-width: 500px) {
+  .about-section .about {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-right: none;
+    text-align: center;
+  }
+}
+.about-section .about h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: purple;
+  padding: 15px 0;
+}
+.about-section .about p {
+  font-family: 'Kodchasan', sans-serif;
   font-size: 2rem;
-  padding-bottom: 5px;
+  padding: 15px 0;
 }
-.about-section p {
-  margin-left: 35%;
-  font-family: 'Dosis', sans-serif;
-  font-size: 1.5rem;
+.about-section .about-list {
+  width: 50%;
+  text-align: right;
+}
+@media (max-width: 500px) {
+  .about-section .about-list {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-right: none;
+    text-align: center;
+  }
+}
+.about-section .about-list h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: purple;
+  padding: 15px 0;
+}
+.about-section .about-list .list {
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 2rem;
+}
+.about-section .about-list .list li {
+  padding-bottom: 5px;
 }
 .portfolio-section {
-  padding-bottom: 15px;
-  padding-top: 15px;
-  background-color: #e7dfc6;
-}
-.portfolio-section .portfolio-title {
   display: block;
-  padding-left: 20%;
-  padding-top: 25px;
-  margin-left: 15%;
-  font-family: 'Merriweather', serif;
-  color: #89023e;
-  font-size: 2rem;
-  padding-bottom: 5px;
+  background-color: #D8BFD8;
+  padding: 30px;
+}
+.portfolio-section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: purple;
+  padding: 15px 0;
+  text-align: center;
 }
 .portfolio-section p {
-  margin-left: 35%;
-  font-family: 'Dosis', sans-serif;
-  font-size: 1.5rem;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 2rem;
+  padding: 15px 0;
+  text-align: center;
+}
+.portfolio-section .portfolio-btn {
+  display: block;
+  margin: 0 auto;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 2rem;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  background-color: purple;
+}
+.portfolio-section .portfolio-btn a {
+  text-decoration: none;
+  color: white;
 }
 .work-section {
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-.work-section .work-title {
+  width: 100%;
   display: block;
-  padding-left: 20%;
-  padding-top: 25px;
-  margin-left: 15%;
-  font-family: 'Merriweather', serif;
-  color: #89023e;
-  font-size: 2rem;
-  padding-bottom: 5px;
 }
-.work-section p {
-  margin-left: 35%;
-  font-family: 'Dosis', sans-serif;
+.work-section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: purple;
+  padding: 15px 0;
+  text-align: center;
+}
+.work-section .work {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+}
+@media (max-width: 500px) {
+  .work-section .work {
+    display: block;
+    width: 100%;
+  }
+}
+.work-section .work .work1 {
+  width: 50%;
+  text-align: left;
+  border-right: 3px dotted purple;
+}
+.work-section .work .work1 h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: purple;
+  padding: 15px 0;
+}
+.work-section .work .work1 p {
+  font-family: 'Kodchasan', sans-serif;
   font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .work-section .work .work1 {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-right: none;
+    text-align: center;
+  }
+}
+.work-section .work .work2 {
+  width: 50%;
+  text-align: right;
+}
+.work-section .work .work2 h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: purple;
+  padding: 15px 0;
+}
+.work-section .work .work2 p {
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .work-section .work .work2 {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-right: none;
+    text-align: center;
+  }
+}
+footer {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #D8BFD8;
+  padding: 20px 0;
+}
+footer h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: purple;
+  padding: 15px 0;
+}
+footer p {
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+footer p a {
+  text-decoration: none;
+  color: purple;
 }
